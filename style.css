@@ -1,0 +1,390 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--------Common style---------*/
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*--------Common style end-------*/
+/*--------header start---------*/
+header {
+  background-color: #24a19c;
+  padding: 0 1%;
+  text-align: center;
+}
+
+header .row .logo .header-logo {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+header .row nav ul li {
+  display: block;
+}
+
+header .row nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header .row nav ul li a:hover {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+/*--------header end---------*/
+/*--------banner start--------*/
+#banner-section {
+  background-image: url(./img/banner.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner-section .banner-contents {
+  padding: 50px 10px;
+  text-align: center;
+}
+
+#banner-section .banner-contents h1 {
+  width: 100%;
+  margin: 15px auto;
+  font-size: 3.1rem;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Handlee", cursive;
+}
+
+#banner-section .banner-contents p {
+  width: 300px;
+  margin: 15px auto;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#banner-section .banner-contents .btn {
+  width: 160px;
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+#banner-section .banner-contents .btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*--------banner end---------*/
+/*--------about start---------*/
+#about-us {
+  padding: 1%;
+}
+
+#about-us .about-us-contents {
+  text-align: center;
+}
+
+#about-us .about-us-contents h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+#about-us .about-us-contents p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  color: #3d3737;
+}
+
+/*--------about end---------*/
+/*--------food menu start-------*/
+#menu-section {
+  padding: 1%;
+}
+
+#menu-section .row .card {
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#menu-section .row .card .card-body {
+  text-align: center;
+}
+
+#menu-section .row .card .card-body img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#menu-section .row .card .item-desc {
+  background-color: gray;
+}
+
+#menu-section .row .card .item-desc .items-name {
+  background-color: green;
+  color: #de8b8b;
+  padding: 10px;
+}
+
+#menu-section .row .card .item-desc p {
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: bolder;
+  color: #131242;
+}
+
+#menu-section .row .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*--------food menu end---------*/
+/*--------Contact section start---------*/
+#contact {
+  padding: 1%;
+  background-color: blueviolet;
+}
+
+#contact .map {
+  width: 100%;
+  height: 400px;
+}
+
+#contact .contact-datails {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+#contact .contact-datails h3 {
+  font-size: 1.5rem;
+}
+
+#contact .contact-datails h5 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+#contact .contact-datails p {
+  font-size: 1rem;
+}
+
+#contact .contact-datails address {
+  font-size: 1rem;
+}
+
+/*--------Contact section end---------*/
+/*--------footer section start---------*/
+footer {
+  padding: 1%;
+  color: white;
+  background-color: #060930;
+}
+
+footer .row h4 {
+  line-height: 32px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer .row .social-menu {
+  text-align: center;
+}
+
+footer .row .social-menu .icon-style {
+  color: white;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+footer .row .social-menu .icon-style:hover {
+  background-color: gray;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*--------footer section end---------*/
+/*-------clear div--------*/
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*-------clear div end--------*/
+.row {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    text-align: left;
+  }
+  header .row ul {
+    text-align: right;
+  }
+  header .row ul li {
+    display: inline-block !important;
+  }
+  header .row ul li a {
+    display: inline-block !important;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .row ul li a:hover {
+    background-color: transparent !important;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    text-decoration: underline;
+    border-radius: 0;
+  }
+  #banner-section {
+    position: relative;
+    height: 100vh;
+  }
+  #banner-section .banner-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #banner-section .banner-contents h1 {
+    width: 700px;
+    font-size: 3.5rem;
+  }
+  #banner-section .banner-contents p {
+    width: 500px;
+    font-size: 2rem;
+  }
+  footer h4 {
+    margin: 0;
+    text-align: left !important;
+  }
+  footer .social-menu {
+    text-align: right !important;
+  }
+  footer .social-menu .icon-style {
+    margin: 0 10px;
+  }
+  /*--------Contact section start---------*/
+  #contact .map {
+    width: 100%;
+    height: 400px;
+  }
+  #contact .contact-datails {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+  }
+  #contact .contact-datails h3 {
+    font-size: 2.5rem;
+  }
+  #contact .contact-datails h5 {
+    font-size: 2.2rem;
+  }
+  #contact .contact-datails p {
+    font-size: 1.5rem;
+  }
+  #contact .contact-datails address {
+    font-size: 1.8rem;
+  }
+  /*--------Food section start---------*/
+  #menu-section .row .card .card-body img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  /*--------Food section end---------*/
+  /*--------Contact section end---------*/
+  /* For desktop: */
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
